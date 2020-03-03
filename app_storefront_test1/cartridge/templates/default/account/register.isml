@@ -1,0 +1,13 @@
+<form action="${URLUtils.url('Hello-SubmitProfile')}" class="edit-profile-form" method="POST" <isprint value="${pdict.profileForm.attributes}" encoding="off" />>
+
+    <div class="form-group">
+        email:
+        <input type="text" class="form-control" id="firstName" 
+        name="dwfrm_register_customer_firstname"   value="" maxLength="50">
+    </div>
+   
+    
+    <button type="submit" name="save" class="btn btn-save btn-block btn-primary">Submit</button>
+   
+
+</form>

@@ -1,0 +1,49 @@
+{
+  "step-types":
+  {
+    "script-module-step":
+    [
+      {
+        "@type-id":"custom.CustomStepTest",
+        "@supports-parallel-execution":"true",
+        "@supports-site-context":"true",
+        "@supports-organization-context":"true",
+        "description":"My custom script step type",
+        "module":"app_storefront_test1/cartridge/scripts/steps/customStepScript.js",
+        "function":"testCustomStepFunc",
+        "transactional":"true",
+        "timeout-in-seconds":"900",
+        "parameters":
+        {
+          "parameter":
+          [
+            {
+              "@name":"MyParameter1",
+              "@type":"string",
+              "@required":"true",
+              "description":"A required boolean parameter."
+            }
+          ]
+        },
+        "status-codes": 
+        {
+                  "status": 
+          [
+                      {
+                          "@code": "ERROR",
+                          "description": "Used when the step failed with an error."
+                      },
+                      {
+                          "@code": "FINISHED",
+              "description": "Used when the step finished successfully."
+                      },
+                      {
+                          "@code": "FINISHED_WITH_WARNINGS",
+              "description": "Used when the step finished with warnings."
+                      }
+                  ]
+              }
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19" secure="false">
+	<group formid="customer" >
+		<field 
+			formid="firstname" 
+			label="label.input.firstname.profile" 
+			max-length="50"
+			mandatory="true"
+			missing-error="error.message.required"
+			range-error="error.message.50orless" 
+			type="string" 
+			binding="firstName"
+			/>
+	</group>
+</form>

@@ -1,0 +1,9 @@
+{
+    "hooks": [
+        
+        {
+            "name": "testEmail",
+            "script": "./cartridge/scripts/hooks/testhook.js"
+        }
+    ]
+}
