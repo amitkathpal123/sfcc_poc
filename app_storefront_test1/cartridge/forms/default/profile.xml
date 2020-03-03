@@ -67,47 +67,21 @@
 			formid="haircolor"
 			label="label.input.haircolor.profile"
 			type="string">
-			<options>
-			  	<option optionid="empty1" label="" value=""/>
-			  	<option optionid="empty" label="" value=""/>
-  				<option optionid="white" label="white" value="white"/>
-  				<option optionid="brown" label="brown" value="brown"/>
-  				<option optionid="black" label="black" value="black"/>
-
- 			</options>
 		</field>
 		<field 
 			formid="skintone"
 			label="label.input.skintone.profile"
 			type="string">
-			<options>
-			  	<option optionid="empty1" label="" value=""/>
-			  	<option optionid="empty" label="" value=""/>
-  				<option optionid="cool" label="cool" value="cool"/>
-  				<option optionid="warm" label="warm" value="warm"/>
- 			</options>
 		</field>
 		<field 
 			formid="eyecolor"
 			label="label.input.eyecolor.profile"
 			type="string">
-			<options>
-			  	<option optionid="empty1" label="" value=""/>
-			  	<option optionid="empty" label="" value=""/>
-  				<option optionid="brown" label="brown" value="brown"/>
-  				<option optionid="black" label="black" value="black"/>
- 			</options>
 		</field>
 		<field 
 			formid="skintype"
 			label="label.input.skintype.profile"
 			type="string">
-			<options>
-			  	<option optionid="empty1" label="" value=""/>
-			  	<option optionid="empty" label="" value=""/>
-  				<option optionid="oily" label="oily" value="oily"/>
-  				<option optionid="dry" label="dry" value="dry"/>
- 			</options>
 		</field>
 		<field 
 			formid="addtoemaillist" 
