@@ -21,10 +21,6 @@ server.append(
             return value;
         });
         data.beautyAttributes=beautyAttributes;
-
-        // res.setViewData({
-        //     beautyAttributes:beautyAttributes
-        // });
         res.setViewData(data);
         
         return next();
