@@ -1,17 +1,16 @@
 'use strict';
-
+ 
 
 var base = module.superModule;
-
+ 
 
 module.exports = function account(currentCustomer, addressModel, orderModel) {
     base.call(this, currentCustomer, addressModel, orderModel);
    this.profile=getUpdatedProfile(currentCustomer);
     
 }
-
-
-
+ 
+ 
 function getUpdatedProfile(currentCustomer) {
     var result;
     if (currentCustomer.profile) {
@@ -25,15 +24,10 @@ function getUpdatedProfile(currentCustomer) {
             skintone: currentCustomer.raw.profile.custom.skintone,
             skintype: currentCustomer.raw.profile.custom.skintype,
             eyecolor: currentCustomer.raw.profile.custom.eyecolor
-
+            
         };
     } else {
         result = null;
     }
     return result;
 }
-
-
-
-
-

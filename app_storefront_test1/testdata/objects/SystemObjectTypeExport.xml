@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <type-extension type-id="Profile">
+        <system-attribute-definitions>
+            <attribute-definition attribute-id="UUID">
+                <min-length>0</min-length>
+                <field-length>28</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="birthday"/>
+            <attribute-definition attribute-id="companyName">
+                <min-length>0</min-length>
+                <field-length>10</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="creationDate"/>
+            <attribute-definition attribute-id="customerNo">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="email">
+                <field-length>75</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="fax">
+                <min-length>0</min-length>
+                <field-length>32</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="firstName">
+                <min-length>0</min-length>
+                <field-length>25</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="gender">
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">Male</display>
+                        <value>1</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Female</display>
+                        <value>2</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="jobTitle">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="lastLoginTime"/>
+            <attribute-definition attribute-id="lastModified"/>
+            <attribute-definition attribute-id="lastName">
+                <min-length>0</min-length>
+                <field-length>25</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="lastVisitTime"/>
+            <attribute-definition attribute-id="nextBirthday"/>
+            <attribute-definition attribute-id="phoneBusiness">
+                <min-length>0</min-length>
+                <field-length>32</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="phoneHome">
+                <min-length>0</min-length>
+                <field-length>32</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="phoneMobile">
+                <min-length>0</min-length>
+                <field-length>32</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="preferredLocale">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="salutation">
+                <min-length>0</min-length>
+                <field-length>5</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="secondName">
+                <min-length>0</min-length>
+                <field-length>25</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="suffix">
+                <min-length>0</min-length>
+                <field-length>5</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="taxID">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="taxIDType">
+                <value-definitions>
+                    <value-definition default="true">
+                        <display xml:lang="x-default">Arbitrary</display>
+                        <value>Arbitrary</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">CPF</display>
+                        <value>CPF</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="title">
+                <min-length>0</min-length>
+                <field-length>10</field-length>
+            </attribute-definition>
+        </system-attribute-definitions>
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="eyecolor">
+                <display-name xml:lang="x-default">Eye Color</display-name>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">Brown</display>
+                        <value>Brown</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Black</display>
+                        <value>Black</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Blue</display>
+                        <value>Blue</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="familyStatus">
+                <display-name xml:lang="x-default">Family Status</display-name>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="haircolor">
+                <display-name xml:lang="x-default">Hair Color</display-name>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">Black</display>
+                        <value>Black</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Brown</display>
+                        <value>Brown</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Blonde</display>
+                        <value>Blonde</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="skintone">
+                <display-name xml:lang="x-default">Skin Tone</display-name>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">Black</display>
+                        <value>Black</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">White</display>
+                        <value>White</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="skintype">
+                <display-name xml:lang="x-default">Skin Type</display-name>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">Oily</display>
+                        <value>Oily</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Dry</display>
+                        <value>Dry</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="Standard">
+                <display-name xml:lang="x-default">Profile Attributes</display-name>
+                <attribute attribute-id="salutation" system="true"/>
+                <attribute attribute-id="title" system="true"/>
+                <attribute attribute-id="companyName" system="true"/>
+                <attribute attribute-id="jobTitle" system="true"/>
+                <attribute attribute-id="firstName" system="true"/>
+                <attribute attribute-id="lastName" system="true"/>
+                <attribute attribute-id="suffix" system="true"/>
+                <attribute attribute-id="gender" system="true"/>
+                <attribute attribute-id="birthday" system="true"/>
+                <attribute attribute-id="email" system="true"/>
+                <attribute attribute-id="nextBirthday" system="true"/>
+                <attribute attribute-id="secondName" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="Phone">
+                <display-name xml:lang="x-default">Phone Numbers</display-name>
+                <attribute attribute-id="phoneHome" system="true"/>
+                <attribute attribute-id="phoneBusiness" system="true"/>
+                <attribute attribute-id="phoneMobile" system="true"/>
+                <attribute attribute-id="fax" system="true"/>
+            </attribute-group>
+            <attribute-group group-id="beautyAttributes">
+                <display-name xml:lang="x-default">Beauty Attributes</display-name>
+                <attribute attribute-id="haircolor"/>
+                <attribute attribute-id="skintone"/>
+                <attribute attribute-id="eyecolor"/>
+                <attribute attribute-id="skintype"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+    <type-extension type-id="SitePreferences">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="GoogleVerificationTag">
+                <display-name xml:lang="x-default">GoogleVerificationTag - Content Attribute</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="accountName">
+                <display-name xml:lang="x-default">Account Name</display-name>
+                <type>string</type>
+                <mandatory-flag>true</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="accountid">
+                <display-name xml:lang="x-default">account id</display-name>
+                <type>string</type>
+                <mandatory-flag>true</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="beautyAttributes">
+                <display-name xml:lang="x-default">Beauty Attributes</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="checkTLS">
+                <display-name xml:lang="x-default">Check TLS</display-name>
+                <description xml:lang="x-default">When true, this causes a TLS check to take place based on whether or not a cookie ('dw_TLSWarning') has been set on the browser</description>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>false</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="countryCode">
+                <display-name xml:lang="x-default">Default Country Code</display-name>
+                <description xml:lang="x-default">Default country code for store searches</description>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition default="true">
+                        <display xml:lang="x-default">USA</display>
+                        <value>US</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">CANADA</display>
+                        <value>CA</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="customerServiceEmail">
+                <display-name xml:lang="x-default">Customer Service Email</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+                <field-length>0</field-length>
+                <default-value>noreply@salesforce.com</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="disableResponsiveDesign">
+                <display-name xml:lang="x-default">Disable Responsive Design</display-name>
+                <description xml:lang="x-default">Disable Responsive Design for Storefront</description>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>false</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="enableInfiniteScroll">
+                <display-name xml:lang="x-default">Enable Infinite Scroll</display-name>
+                <description xml:lang="x-default">This Boolean toggles the option for infinite scrolling or pagination from within the search grid.</description>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>false</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="enableMultiShipping">
+                <display-name xml:lang="x-default">Enable MultiShipping</display-name>
+                <description xml:lang="x-default">The attribute is used to enable/disable Multi-Shipment Checkout for each site via BM.</description>
+                <type>boolean</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <default-value>true</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="listPriceDefault">
+                <display-name xml:lang="x-default">Default List Price Book ID</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+                <default-value>usd-m-list-prices</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="mapAPI">
+                <display-name xml:lang="x-default">google map api key</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="rateLimiterThreshold">
+                <display-name xml:lang="x-default">Rate Limiter Threshold</display-name>
+                <description xml:lang="x-default">This number indicates the number of times failures for Logins, GiftCert Balances, and Order Tracking requests will be allowed before displaying a CAPTCHA-style pop-up rate limiter</description>
+                <type>int</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-value>0.0</min-value>
+                <default-value>5</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="slideshoweffect">
+                <display-name xml:lang="x-default">Slide Slow effect</display-name>
+                <description xml:lang="x-default">Please visit http://jquery.malsup.com/cycle/browser.html for complete visual effects</description>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">blindX (slide from left)</display>
+                        <value>blindX</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">blindY (slide from bottom)</display>
+                        <value>blindY</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">blindZ (slide from bottom right corner)</display>
+                        <value>blindZ</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">cover (slide from left, clean)</display>
+                        <value>cover</value>
+                    </value-definition>
+                    <value-definition default="true">
+                        <display xml:lang="x-default">curtainX (expand from center horizontally)</display>
+                        <value>curtainX</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">curtainY (expand from center vertically)</display>
+                        <value>curtainY</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">fade</display>
+                        <value>fade</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">fadeZoom (Zoom out from center)</display>
+                        <value>fadeZoom</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">growX (grow from center horizontally)</display>
+                        <value>growX</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">growY (grow from center vertically)</display>
+                        <value>growY</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">none (No effects)</display>
+                        <value>none</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">scrollUp (Scroll Up)</display>
+                        <value>scrollUp</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">scrollDown (Scroll Down)</display>
+                        <value>scrollDown</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">scrollLeft (Scroll Left)</display>
+                        <value>scrollLeft</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">scrollRight (Scroll Right)</display>
+                        <value>scrollRight</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">scrollHorz (Scroll Horizontally)</display>
+                        <value>scrollHorz</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">scrollVert (Scroll Vertically)</display>
+                        <value>scrollVert</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">shuffle</display>
+                        <value>shuffle</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">slideX (Slide to the right)</display>
+                        <value>slideX</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">slideY (Slide Bottom)</display>
+                        <value>slideY</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">toss</display>
+                        <value>toss</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">turnUp</display>
+                        <value>turnUp</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">turnDown</display>
+                        <value>turnDown</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">turnLeft</display>
+                        <value>turnLeft</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">turnRight</display>
+                        <value>turnRight</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">uncover</display>
+                        <value>uncover</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">wipe</display>
+                        <value>wipe</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">zoom</display>
+                        <value>zoom</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="storeLookupMaxDistance">
+                <display-name xml:lang="x-default">Store Lookup Max Distance</display-name>
+                <description xml:lang="x-default">Store Lookup Max Distance</description>
+                <type>enum-of-int</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">50</display>
+                        <value>50</value>
+                    </value-definition>
+                    <value-definition default="true">
+                        <display xml:lang="x-default">75</display>
+                        <value>75</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">100</display>
+                        <value>100</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">150</display>
+                        <value>150</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">200</display>
+                        <value>200</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="Storefront Configs">
+                <display-name xml:lang="x-default">Storefront Configurations</display-name>
+                <attribute attribute-id="listPriceDefault"/>
+                <attribute attribute-id="GoogleVerificationTag"/>
+                <attribute attribute-id="countryCode"/>
+                <attribute attribute-id="customerServiceEmail"/>
+                <attribute attribute-id="mapAPI"/>
+                <attribute attribute-id="beautyAttributes"/>
+            </attribute-group>
+            <attribute-group group-id="BASIC_CREDIT">
+                <display-name xml:lang="x-default">Basic Credit</display-name>
+                <attribute attribute-id="accountid"/>
+                <attribute attribute-id="accountName"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+
+</metadata>

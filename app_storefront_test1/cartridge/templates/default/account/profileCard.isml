@@ -18,28 +18,28 @@
             <dt>${Resource.msg('label.profile.email','account',null)}</dt>
             <dd>${pdict.account.profile.email}</dd>
         </dl>
-        <dl>
-            <dt>Hair color</dt>
-            <dd>${pdict.account.profile.haircolor}</dd>
-        </dl>
-        <dl>
-            <dt>Eye color</dt>
-            <dd>${pdict.account.profile.eyecolor}</dd>
-        </dl>
-        <dl>
-            <dt>Skin tone</dt>
-            <dd>${pdict.account.profile.skintone}</dd>
-        </dl>
-        <dl>
-            <dt>Skin type</dt>
-            <dd>${pdict.account.profile.skintype}</dd>
-        </dl>
         <isif condition="${!pdict.account.isExternallyAuthenticated}">
             <dl>
                 <dt>${Resource.msg('label.profile.phone','account',null)}</dt>
                 <dd>${pdict.account.profile.phone}</dd>
             </dl>
         </isif>
+        <dl>
+            <dt>${Resource.msg('label.profile.skintone','account',null)}</dt>
+            <dd>${pdict.account.profile.skintone}</dd>
+        </dl>
+        <dl>
+            <dt>${Resource.msg('label.profile.haircolor','account',null)}</dt>
+            <dd>${pdict.account.profile.haircolor}</dd>
+        </dl>
+        <dl>
+            <dt>${Resource.msg('label.profile.skintype','account',null)}</dt>
+            <dd>${pdict.account.profile.skintype}</dd>
+        </dl>
+        <dl>
+            <dt>${Resource.msg('label.profile.eyecolor','account',null)}</dt>
+            <dd>${pdict.account.profile.eyecolor}</dd>
+        </dl>
 
     </div>
 </div>

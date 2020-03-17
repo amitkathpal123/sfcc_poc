@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer-groups xmlns="http://www.demandware.com/xml/impex/customergroup/2007-06-30">
+    <customer-group group-id="EyeColorAndSkinType">
+        <membership-rule>
+            <included-customers>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>customer.profile.custom.eyecolor</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                    <condition>
+                        <attribute-path>customer.profile.custom.skintype</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                </condition-group>
+            </included-customers>
+        </membership-rule>
+        <custom-attributes/>
+    </customer-group>
+
+    <customer-group group-id="HairAndEyeColor">
+        <membership-rule>
+            <included-customers>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>customer.profile.custom.eyecolor</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                    <condition>
+                        <attribute-path>customer.profile.custom.haircolor</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                </condition-group>
+            </included-customers>
+        </membership-rule>
+        <custom-attributes/>
+    </customer-group>
+
+    <customer-group group-id="SkinToneAndEyeColor">
+        <membership-rule>
+            <included-customers>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>customer.profile.custom.skintone</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                    <condition>
+                        <attribute-path>customer.profile.custom.haircolor</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                </condition-group>
+            </included-customers>
+        </membership-rule>
+        <custom-attributes/>
+    </customer-group>
+
+    <customer-group group-id="HairAndSkinTone">
+        <membership-rule>
+            <included-customers>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>customer.profile.custom.haircolor</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                    <condition>
+                        <attribute-path>customer.profile.custom.skintone</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                </condition-group>
+            </included-customers>
+        </membership-rule>
+        <custom-attributes/>
+    </customer-group>
+
+    <customer-group group-id="SkinToneAndSkinType">
+        <membership-rule>
+            <included-customers>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>customer.profile.custom.skintone</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                    <condition>
+                        <attribute-path>customer.profile.custom.skintype</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                </condition-group>
+            </included-customers>
+        </membership-rule>
+        <custom-attributes/>
+    </customer-group>
+
+    <customer-group group-id="HairAndSkinType">
+        <membership-rule>
+            <included-customers>
+                <condition-group match-mode="all">
+                    <condition>
+                        <attribute-path>customer.profile.custom.haircolor</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                    <condition>
+                        <attribute-path>customer.profile.custom.skintype</attribute-path>
+                        <operator>exists</operator>
+                    </condition>
+                </condition-group>
+            </included-customers>
+        </membership-rule>
+        <custom-attributes/>
+    </customer-group>
+
+</customer-groups>

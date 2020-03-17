@@ -1,0 +1,66 @@
+{
+  "hairColors": [
+    {
+      "key": "",
+      "value": ""
+    },
+    {
+      "key": "Black",
+      "value": "Black"
+    },
+    {
+      "key": "Blonde",
+      "value": "Blonde"
+    },
+    {
+      "key": "Brown",
+      "value": "Brown"
+    }
+  ],
+  "skinTones": [
+    {
+      "key": "",
+      "value": ""
+    },
+    {
+      "key": "Black",
+      "value": "Black"
+    },
+    {
+      "key": "White",
+      "value": "White"
+    }
+  ],
+  "skinTypes": [
+    {
+      "key": "",
+      "value": ""
+    },
+    {
+      "key": "Oily",
+      "value": "Oily"
+    },
+    {
+      "key": "Dry",
+      "value": "Dry"
+    }
+  ],
+  "eyeColors": [
+    {
+      "key": "",
+      "value": ""
+    },
+    {
+      "key": "Black",
+      "value": "Black"
+    },
+    {
+      "key": "Blue",
+      "value": "Blue"
+    },
+    {
+      "key": "Brown",
+      "value": "Brown"
+    }
+  ]
+}
