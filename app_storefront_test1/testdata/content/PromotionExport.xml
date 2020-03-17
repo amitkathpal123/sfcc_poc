@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<promotions xmlns="http://www.demandware.com/xml/impex/promotion/2008-01-31">
+    <campaign campaign-id="20OffEyeColorAndSkinTypeProducts">
+        <description>20% off for registered users having eye color and skin type updated in their profile</description>
+        <enabled-flag>true</enabled-flag>
+        <campaign-scope>
+            <applicable-online/>
+        </campaign-scope>
+        <start-date>2020-03-01T00:00:00.000Z</start-date>
+        <end-date>2020-03-31T23:45:00.000Z</end-date>
+        <customer-groups match-mode="any">
+            <customer-group group-id="EyeColorAndSkinType"/>
+            <customer-group group-id="HairAndEyeColor"/>
+            <customer-group group-id="HairAndSkinTone"/>
+            <customer-group group-id="Registered"/>
+            <customer-group group-id="HairAndSkinType"/>
+        </customer-groups>
+    </campaign>
+
+    <global-promotion-settings>
+        <global-excluded-products>
+            <included-products>
+                <condition-group>
+                    <category-condition catalog-id="storefront-catalog-m-en" operator="is equal">
+                        <category-id>electronic-games</category-id>
+                    </category-condition>
+                </condition-group>
+            </included-products>
+        </global-excluded-products>
+    </global-promotion-settings>
+
+    <promotion promotion-id="20OffBeautyProducts">
+        <enabled-flag>true</enabled-flag>
+        <archived-flag>false</archived-flag>
+        <searchable-flag>false</searchable-flag>
+        <refinable-flag>false</refinable-flag>
+        <exclusivity>global</exclusivity>
+        <name xml:lang="x-default">20OffBeautyProducts</name>
+        <callout-msg xml:lang="x-default">20% off for registered users having atleast 2 beauty attributes updated in their profile</callout-msg>
+        <details xml:lang="x-default">20% off for registered users having atleast 2 beauty attributes updated in their profile</details>
+        <product-promotion-rule>
+            <discounted-products>
+                <included-products>
+                    <condition-group>
+                        <category-condition catalog-id="storefront-catalog-m-en" operator="is equal">
+                            <category-id>womens-jewelry</category-id>
+                        </category-condition>
+                    </condition-group>
+                </included-products>
+            </discounted-products>
+            <simple-discount>
+                <percentage>20.0</percentage>
+            </simple-discount>
+            <max-applications>1</max-applications>
+        </product-promotion-rule>
+    </promotion>
+
+    <promotion-campaign-assignment promotion-id="20OffBeautyProducts" campaign-id="20OffEyeColorAndSkinTypeProducts">
+        <qualifiers match-mode="any">
+            <customer-groups/>
+            <source-codes/>
+            <coupons/>
+        </qualifiers>
+    </promotion-campaign-assignment>
+
+</promotions>
